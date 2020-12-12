@@ -8,8 +8,8 @@ export function Menu(props) {
         setActiveItem(newActiveItem);
     }
 
-    const getItemClassName = (ItemIndex) => {
-        if (ItemIndex === activeItem) {
+    const getItemClassName = (itemIndex) => {
+        if (itemIndex === activeItem) {
             return "active";
         } else {
             return "";
@@ -27,12 +27,12 @@ export function Menu(props) {
 
                     <div id="nav-wrapper">
 
-                        <ul id="nav"> 
+                        <ul id="nav">
 
                             {props.items.map((item, i) => (
                                 <li id="nav-item" key={i} className={getItemClassName(i)} onClick={() => processItemClick(i)}>{item}</li>
                             ))}
-                            
+
                         </ul>
 
                     </div>
