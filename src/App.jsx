@@ -1,12 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import { Menu } from "./Components/Menu/Menu";
+import { Menu } from './Components/Menu/Menu';
+import { Routes, HomeUrl, FilmsUrl, SerialsUrl, PeopleUrl, LoginUrl, SignupUrl, HomeLink, } from './Routes';
 
 export const App = () => {
 
   return (
     <>
-      <Menu items={["Фильмы", "Сериалы", "Люди", "Вход", "Регистрация"]} />
+
+      <BrowserRouter>
+        <Menu items={Routes} />
+        <Switch>
+
+          {Routes.map((item, index) => (
+                <Route key={index} path={item.Url} exact>
+                  <item.component />
+                </Route>
+          ))}
+
+        </Switch>
+      </BrowserRouter>
+
+
     </>
   );
 }

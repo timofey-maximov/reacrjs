@@ -1,0 +1,35 @@
+.main-header {
+    padding-top: 10vh;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding-top: 60px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+input {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+    font-size: 1.4em;
+    background-color: #ace0db;
+    border: 1px solid #ace0db;
+    border-radius: 30px;
+    margin-bottom: 7%;
+}
+
+input:focus {
+    outline: 0;
+}
+

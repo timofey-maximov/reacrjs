@@ -1,46 +1,45 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
+import { Link, useLocation, useRouteMatch } from "react-router-dom";
 import "./Menu.css";
 
-export function Menu(props) {
-    const [activeItem, setActiveItem] = useState();
-
-    const processItemClick = (newActiveItem) => {
-        setActiveItem(newActiveItem);
-    }
-
-    const getItemClassName = (itemIndex) => {
-        if (itemIndex === activeItem) {
-            return "active";
-        } else {
-            return "";
-        }
-    }
+export function Menu() {
 
     return (
-        <div id="header">
-            <div id="nav-container">
 
-                <div id="logo">
-                    <a href="#"><img src="favicon.png" alt="logo" width="40px"></img></a>
-                    <a href="#" title="На главную">MovieFinder</a>
+        <div className="header">
+
+            <div className="nav-container">
+
+                <div className="logo">
+                    <Link to="/"><img src="favicon.png" width="40px" /></Link>
+                    <Link className="link" to="/">MovieFinder</Link>
                 </div>
 
+                <div className="nav-warpper">
 
-                <div id="nav-wrapper">
+                    <ul>
 
-                    <ul id="nav">
-                        {props.items.map((item, i) => (
-                            <li id="nav-item" key={i} className={getItemClassName(i)} onClick={() => processItemClick(i)}>{item}</li>
-                        ))}
+                        <li>
+                            <Link className="link" to="/movies">Фильмы</Link>
+                        </li>
+                        <li>
+                            <Link className="link" to="/serials">Сериалы</Link>
+                        </li>
+                        <li>
+                            <Link className="link" to="/people">Люди</Link>
+                        </li>
+                        <li>
+                            <Link className="link" to="/login">Вход</Link>
+                        </li>
+                        <li>
+                            <Link className="link" to="/signup">Регистрация</Link>
+                        </li>
+
                     </ul>
 
-                    <div id="menu-togle" id="menu-icon">
-                        <div id="menu-icon-line"></div>
-                    </div>
-
                 </div>
-                
             </div>
         </div>
+
     );
 }
