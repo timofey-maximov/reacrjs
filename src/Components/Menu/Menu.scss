@@ -46,23 +46,27 @@ body {
     align-items: center;
 }
 
- ul{
+ul{
     display: flex;
     list-style: none;
     cursor: pointer;
- }
-
-li{
    font-size: $font-size;
-   padding: 20px;
 }
 
-li:nth-child(1){
-   padding-left: 150px;
+ li{
+    padding-right: 20px;
+}
+
+ li:first-child{
+    padding-left: 150px;
 }
 
 li:nth-child(3){
-  padding-right: 310px;
+   padding-right: 400px;
+}
+
+li:last-child {
+    padding-right: 0;
 }
 
 .link{

@@ -18,7 +18,7 @@ export const Searcher = () => {
 
             </div>
 
-            <input type="search" class="poisk" placeholder="Поиск..."></input>
+            <input type="search" placeholder="Поиск..."></input>
 
         </div>
 

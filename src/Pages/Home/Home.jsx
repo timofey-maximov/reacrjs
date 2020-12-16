@@ -6,10 +6,12 @@ export const Home = () => {
     return (
         <>
 
-            {/* <Searcher />
+             <Searcher/> 
 
-            <Product image="" title="Гриффины" description="31 января 1999" />
-            <Product title="Симпсоны" description="16 декабря 1989" /> */}
+             <hr className="hr"/>
+
+            {/* <Product image="" title="Гриффины" description="31 января 1999" />
+         <Product title="Симпсоны" description="16 декабря 1989" />  */}
 
         </>
     );

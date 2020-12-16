@@ -12,7 +12,7 @@ export function Menu() {
 
                 <div className="logo">
                     <Link to="/"><img src="favicon.png" width="40px" /></Link>
-                    <Link className="link" to="/">MovieFinder</Link>
+                    <Link className="link" title="На главную" to="/">MovieFinder</Link>
                 </div>
 
                 <div className="nav-warpper">
