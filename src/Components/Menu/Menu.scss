@@ -62,9 +62,9 @@ li:nth-child(3){
     padding-right: 300px;
 }
 
-// li:last-child {
-//     padding-right: 0;
-// }
+ li:last-child {
+     padding-right: 0;
+ }
 
 .link{
   color: white;
@@ -74,3 +74,5 @@ li:nth-child(3){
 .link:hover{
    color: aquamarine;
 }
+
+

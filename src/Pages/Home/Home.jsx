@@ -1,17 +1,33 @@
-import React from "react";
-import { Product } from "../../Components/Product/Product";
+import React, { useEffect, useState } from "react";
+import { ShortProductInfo } from "../../Components/ShortProductInfo/ShortProductInfo";
 import { Searcher } from "../../Components/Searcher/Searcher";
+import { fetchProducts } from "../../Services/fetchProducts";
 
 export const Home = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchedData = fetchProducts();
+
+        setProducts(fetchProducts);
+    }, []);
+
     return (
         <>
 
-             <Searcher/> 
+            <Searcher />
 
-             <hr className="hr"/>
+            <hr className="hr" />
 
-            {/* <Product image="" title="Гриффины" description="31 января 1999" />
-         <Product title="Симпсоны" description="16 декабря 1989" />  */}
+            {products.map((product, index) =>
+                <ShortProductInfo
+                    key={index}
+                    id={product.id}
+                    imageUrl={product.imageUrl}
+                    title={product.title}
+                    description={product.description}
+                />
+            )}
 
         </>
     );

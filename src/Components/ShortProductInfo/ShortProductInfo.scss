@@ -1,0 +1,50 @@
+.short-product-info{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.short-product-info a{
+    color: white;
+    text-decoration: none;
+}
+.short-product-info a:hover{
+    color: aquamarine;
+}
+
+.short-product-info p{
+    color: gray;
+}
+
+.short-product-info-logo{
+    width: 200px;
+}
+
+.text1{
+    padding-left: 20px;
+}
+
+.under-product-header{
+    color: white;
+    padding-top: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.2em;
+}
+
+.content {
+    /* border: 1px solid #151515;
+    background-color: #151515; */
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.card-style {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+}

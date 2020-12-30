@@ -1,0 +1,61 @@
+// .box{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding-top: 5%;
+// }
+
+// .box h1 {
+//     color: white;
+// }
+
+// input[type=text],
+// input[type=password],
+// input[type=email] {
+//     padding: 15px 14px;
+//     margin: 10px;
+//     border-radius: 25px;
+//     background-color: #151515;
+//     color: white;
+//     font-size: 20px;
+//     width: 250px;
+//     text-align: center;
+// }
+
+// input[type=submit].entry-submit {
+//     padding: 15px 14px;
+//     margin: 10px;
+//     border-radius: 25px;
+//     font-size: 20px;
+//     background-color: #2ecc71;
+//     border: #2ecc71;
+//     color: white;
+//     width: 110px;
+//     text-align: center;
+// }
+
+// input[type=text]:focus,
+// input[type=password]:focus,
+// input[type=email]:focus,
+// input[type=submit]:focus {
+//     outline: 0;
+// }
+
+// input[type=text]:focus,
+// input[type=password]:focus,
+// input[type=email]:focus {
+//     /* width: 270px;
+//     transition: all 0.5s; */
+//     border-color: #2ecc71;
+// }
+
+// input[type=text],
+// input[type=password],
+// input[type=email] {
+//     border-color: #3498db;
+// }
+
+form{
+    padding-top: 5%;
+    padding-left: 5%;
+}

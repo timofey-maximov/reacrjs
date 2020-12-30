@@ -1,0 +1,8 @@
+.valid-input .valid {
+  background-color: #72e572;
+}
+
+.valid-input .invalid {
+  background-color: #c08a8a;
+}
+/*# sourceMappingURL=ValidInput.css.map */
